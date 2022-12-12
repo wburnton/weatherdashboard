@@ -1,24 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherDashboard</title>
+    <title>WeatherDashboard</title> 
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body> 
-    <header> 
+
+<body>
+    <header>
         <a>Weather Dashboard</a>
-    </header> 
-    <section id = "searchbar"> 
-        
-    </section> 
-    <section id = "cityInfo"> 
+    </header>
+    <div id="parentDiv">
+        <div id="searchDiv">
+            <input name="searchbar" id="searchBar" type="text" placeholder="search"></input>
+            <button id="input">Search</button>
+            <div id="searchHistory"></div>
+        </div>
+        <div class="card" id="singleDayForecast">
+            <section id="cityInfo">
+                <h1 id="cityName"> </h1>
+                <h4 id="temp"></h4>
+                <h4 id="wind"></h4>
+                <h4 id="humidity"></h4>
 
-    </section> 
-    <section id = "5day4cast">
+            </section>
+        </div> 
+        <br><br>
+        <div id="forecast"> 
+            <section class = "card"> 
+                <h3 id="dateOne"> </h3>
+                <h4 id="tempOne"></h4>
+                <h4 id="windOne"></h4>
+                <h4 id="humidityOne"></h4>
+            </section> 
+            <br><br>
+            <section class="card" id = dayTwo> 
+                <h3 id="dateTwo"></h3>
+                <h4 id="tempTwo"></h4>
+                <h4 id="windTwo"></h4>
+                <h4 id="humidityTwo"></h4>
+            </section>  
+            <br><br>
+            <section class="card" id = dayThree> 
+                <h3 id="dateThree"> </h3>
+                <h4 id="tempThree"></h4>
+                <h4 id="windThree"></h4>
+                <h4 id="humidityThree"></h4>
+            </section> 
+            <br><br>
+            <section class="card" id = dayFour> 
+                <h3 id="dateFour"> </h3>
+                <h4 id="tempFour"></h4>
+                <h4 id="windFour"></h4>
+                <h4 id="humidityFour"></h4>
+            </section> 
+            <br><br>
+            <section class="card" id = dayFive> 
+                <h3 id="dateFive"> </h3>
+                <h4 id="tempFive"></h4>
+                <h4 id="windFive"></h4>
+                <h4 id="humidityFive"></h4>
+            </section> 
+        </div>
+    </div>
 
-    </section>
-    <link src="script.js"> 
+
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
